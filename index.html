@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="com-layoul">
+            <div class="header form-input">
+                Register Form
+            </div>
+            <hr>
+            <div class="flex form-input">
+                <div class="header-form">Name</div>
+                <input class="form" name="firsname" type="text">
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">Last Name</div>
+                <input class="form" name="lastname" type="text">
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">Date</div>
+                <input class="form" name="age" type="number" min="0" max="100">
+            </div>
+            <hr>
+            <div class="flex gender fome-input">
+                <div class="header-form">Gender</div>
+                <div class="flex">
+                    <div>
+                        <input name="gender" type="radio" value="man">man
+                    </div>
+                    <div>
+                        <input name="gender" type="radio" value="female">female
+                    </div>
+                    <div>
+                        <input name="gender" type="radio" value="Not specified">Not specified
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="fome-input">
+                <div class="header-form">Things of interest</div>
+                <div>
+                    <input name="interest" type="checkbox" value="book">book
+                </div>
+                <div>
+                    <input name="interest" type="checkbox" value="video games">video games
+                </div>
+                <div>
+                    <input name="interest" type="checkbox" value="politics">politics
+                </div>
+            </div>
+            <hr>
+            <div class="fome-input">
+                <div class="header-form">Additional identity description</div>
+                
+                <div>
+                    <textarea name="description"></textarea>
+                </div>
+            </div>
+            
+            <div class="fome-input center">
+                <a href="https://shopee.co.th/">T&C</a>
+            </div>
+            
+            <div class="center">
+                <button onclick="submitData()" class="button">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
