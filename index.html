@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="user.html">Go to user management</a>
+    
     <div class="container">
         <div class="com-layoul">
             <div class="header form-input">
@@ -62,17 +64,23 @@
                     <textarea name="description"></textarea>
                 </div>
             </div>
+                
+            
             
             <div class="fome-input center">
                 <a href="https://shopee.co.th/">T&C</a>
             </div>
-            
+
+            <div id="message" class="message"></div>
+
             <div class="center">
                 <button onclick="submitData()" class="button">Submit</button>
             </div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="index.js"></script>
+    
 </body>
 </html>
